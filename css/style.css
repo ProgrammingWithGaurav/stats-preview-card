@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0A0C1B;
+    min-height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 10vh;
+    width: 70vw;
+    height: 450px;
+    background-color: #1C1938;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+.img {
+    width: 50%;
+}
+
+.img img {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 -500px 10 10px #4F2966;
+}
