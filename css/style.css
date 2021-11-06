@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -17,10 +19,12 @@ body {
     width: 70vw;
     height: 350px;
     background-color: #1C1938;
-    border-radius: 10px;
+    border-radius: 20px;
 
     display: flex;
-    justify-content: space-between
+    justify-content: center;
+    margin-bottom: 30px;
+
 }
 
 .img {
@@ -28,12 +32,13 @@ body {
 }
 
 .img img {
+    width: 100%;
     height: 100%;
     border-radius: 0 10px 10px 0;
 }
 
 .content {
-    width: 57%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +47,7 @@ body {
 .content .heading {
     margin: 15px 30px 2px 40px;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 30px;
     display: flex;
     width: 350px;
@@ -54,7 +59,6 @@ body {
 }
 
 .content .desc {
-    width: 400px;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -62,8 +66,8 @@ body {
     color: #BDBBD1;
 }
 
-.content .stats{
-    font-family: sans-serif;
+.content .stats {
+    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     width: 80%;
     margin-top: 20px;
@@ -77,9 +81,55 @@ body {
 }
 
 .content .stats p span {
-    font-size: 9px;
+    font-size: 10px;
     color: #BDBBD1;
-    font-weight: 500;
     margin-top: 8px;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+        border-radius: 0 0 10px 10px;
+        width: 85vw;
+        height: auto;
+    }
+
+    .img img {
+        border-radius: 10px 10px 0 0;
+        width: 85vw;
+    }
+
+    .content {
+        border-radius: 0 0 10px 10px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .content .heading {
+        width: 90%;
+        text-align: center;
+    }
+
+    .content .desc {
+        text-align: center;
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stats p {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .content .stats p span {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
 }
